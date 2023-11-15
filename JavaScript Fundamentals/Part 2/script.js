@@ -21,13 +21,26 @@
 
 
 //Tasks
-let name = "Ilya";
+//let name = "Ilya";
 
 // the expression is a number 1
-alert( `hello ${1}` ); // hello 1
+//alert( `hello ${1}` ); // hello 1
 
 // the expression is a string "name"
-alert( `hello ${"name"}` ); // hello name
+//alert( `hello ${"name"}` ); // hello name
 
 // the expression is a variable, embed it
-alert( `hello ${name}` ); // hello Ilya
+// alert( `hello ${name}` ); // hello Ilya
+
+
+
+//answer to prompt appear below buttong
+function open() {
+  const intro = prompt("Welcome to my cafe, what would you like to drink?");
+  const welcome = document.querySelector("#welcome");
+  welcome.textContent = `Here is your ${intro}, hope you enjoy it :)`;
+}
+
+//when button is click on, it run the open function
+const button = document.querySelector("button");
+button.addEventListener("click", open);
