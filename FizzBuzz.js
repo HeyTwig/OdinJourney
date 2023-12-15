@@ -8,7 +8,7 @@ Otherwise print the current number  */
 
 let answer = parseInt(prompt("Pick a number to FizzBuzz: "));
 
-function fizzBuzz(answer) {
+
   for (let i = 1; i <= answer; i++) {
     if (divBy3(i) && divBy5(i)) {
       console.log("FizzBuzz");
@@ -20,7 +20,7 @@ function fizzBuzz(answer) {
       console.log(i);
     }
   }
-}
+
 
 function divBy3(num) {
   return num % 3 == 0;
@@ -29,4 +29,3 @@ function divBy3(num) {
 function divBy5(num) {
   return num % 5 == 0;
 }
-
