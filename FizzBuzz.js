@@ -23,11 +23,11 @@ function fizzBuzz(answer) {
 }
 
 function divBy3(num) {
-  return num % 3 == 0 ? console.log("Fizz") : num;
+  return num % 3 == 0
 }
 
 function divBy5(num) {
-  return num % 5 == 0 ? console.log("Buzz") : num;
+  return num % 5 == 0
 }
 
-fizzBuzz()
+
