@@ -11,23 +11,22 @@ let answer = parseInt(prompt("Pick a number to FizzBuzz: "));
 function fizzBuzz(answer) {
   for (let i = 1; i <= answer; i++) {
     if (divBy3(i) && divBy5(i)) {
-      console.log("FizzBuzz")
+      console.log("FizzBuzz");
     } else if (divBy3(i)) {
       console.log("Fizz");
     } else if (divBy5(i)) {
       console.log("Buzz");
     } else {
-      console.log(i)
+      console.log(i);
     }
   }
 }
 
 function divBy3(num) {
-  return num % 3 == 0
+  return num % 3 == 0;
 }
 
 function divBy5(num) {
-  return num % 5 == 0
+  return num % 5 == 0;
 }
-
 
