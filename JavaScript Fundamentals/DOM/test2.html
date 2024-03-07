@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image load Event Demo</title>
+</head>
+<body>
+
+<script>
+  window.addEventListener('load' () => {
+    let logo = document.createElement('img');
+    // assign and onload event handler
+    logo.addEventListener('load', (event) => {
+        console.log('The logo has been loaded');
+    });
+    // add logo to the document
+    document.body.appendChild(logo);
+    logo.src = 'logo.png';
+});
+
+</script>
+</body>
+</html>
