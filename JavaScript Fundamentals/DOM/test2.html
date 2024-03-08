@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Image load Event Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS beforeunload Event</title>
 </head>
+
 <body>
-
-<script>
-  window.addEventListener('load' () => {
-    let logo = document.createElement('img');
-    // assign and onload event handler
-    logo.addEventListener('load', (event) => {
-        console.log('The logo has been loaded');
-    });
-    // add logo to the document
-    document.body.appendChild(logo);
-    logo.src = 'logo.png';
-});
-
-</script>
+    <a href="https://www.javascripttutorial.net/">JavaScript Tutorial</a>
+    <script>
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            // Google Chrome requires returnValue to be set.
+            event.returnValue = '';
+        });
+    </script>
 </body>
+
 </html>
