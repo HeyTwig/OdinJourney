@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS beforeunload Event</title>
+    <title>JavaScript Keyboard Events: Key/Code</title>
 </head>
-
 <body>
-    <a href="https://www.javascripttutorial.net/">JavaScript Tutorial</a>
+    <input type="text" id="message">
+
     <script>
-        window.addEventListener('beforeunload', (event) => {
-            event.preventDefault();
-            // Google Chrome requires returnValue to be set.
-            event.returnValue = '';
+        let textBox = document.getElementById('message');
+        textBox.addEventListener('keyup', (event) => {
+            console.log(`key=${event.key},code=${event.code}`);
+
         });
+        
     </script>
 </body>
-
 </html>
